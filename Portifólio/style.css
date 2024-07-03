@@ -11,6 +11,10 @@ body{
     color: white;
 }
 
+.cabecalho{
+    
+}
+
 .apresentacao{
     display: flex;
     align-items: center;
@@ -38,20 +42,30 @@ body{
 
 .apresentacao__links{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .apresentacao__links__link{
-    background-color: blueviolet;
-    width: 260px;
-    height: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: black;
+    width: 280px;
     text-align: center;
     border-radius: 16px;
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
     padding: 21.5px 0;
     text-decoration: none;
-    color:black;
+    color: white;
+    border: 2px solid blueviolet;
+}
+
+
+.apresentacao__links__link:hover{
+    color:white;
+    background-color: #272727;
+    opacity: 1;
 }
 
 .apresentacao__conteudo__imagem{
@@ -61,3 +75,10 @@ body{
 .apresentacao__conteudo__marcacao{
     color: blueviolet;
 }
+
+.imagem__links__link{
+    width: 35px;
+    display: flex;
+    justify-content: center;
+}
+
