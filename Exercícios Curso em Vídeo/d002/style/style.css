@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Android";
+    src: url("../fonts/idroid.otf") format("opentype");
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-Android: "Android"
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #83DFAB;
+    font-family: var(--font-padrao);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(to bottom, #38CA79, #288B54, #1A5C38);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+}
+
+h2 {
+    color: #1F603C;
+    font-family: var(--fonte-Android);
+}
+
+nav {
+    background-color: #1A5C38;
+    display: flex;
+    gap: 20px;
+}
+
+nav > a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.11);
+    width: 10%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding:0px 10px 0px 10px;
+
+}
+
+h3 {
+    background: linear-gradient(to right ,#C8ECD8, white);
+    color: #1F603C;
+    font-family: var(--fonte-Android);
+}
+
+p > a {
+    text-decoration: none;
+    color: #288B54;
+}
+
+p > a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    color:#288B54;
+}
+
+.bugdroid {
+    height: 30%;
+    width: 30%;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+@media(max-width: 720px) {
+    .imagem1 {
+        content: url('../imagens/dan-droids-pq.png');
+    }
+
+    .imagem2 {
+        content: url("../imagens/irina-blok-pq.jpg")
+    }
+
+    .bugdroid {
+        height: 60%;
+        width: 60%;
+        margin: auto
+    }
+}
