@@ -8,7 +8,7 @@
 
 :root {
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-destaque: "Bebas Neue", cursive;
     --fonte-Android: "Android"
 }
 
@@ -34,11 +34,13 @@ header {
 
 header > h1 {
     font-family: var(--fonte-destaque);
+    font-size: 3em;
 }
 
 h2 {
     color: #1F603C;
     font-family: var(--fonte-Android);
+    font-weight: normal;
 }
 
 nav {
@@ -51,17 +53,19 @@ nav > a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 10px;
 }
 
 nav > a:hover {
-    background-color: rgba(255, 255, 255, 0.11);
-    width: 10%;
+    background-color: #38CA79;
+    color: #1A5C38;
+    border-radius: 5%;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     background-color: white;
     width: 80%;
     margin: auto;
@@ -73,19 +77,29 @@ h3 {
     background: linear-gradient(to right ,#C8ECD8, white);
     color: #1F603C;
     font-family: var(--fonte-Android);
+    font-weight: normal;
 }
 
-p > a {
+main > p {
+    text-indent: 30px;
+    font-size: 1em;
+}
+
+main > p > a {
     text-decoration: none;
+    color: #1A5C38;
+    background-color: #83DFAB;
+    padding: 0px 5px;
+}
+
+main > p > a:hover {
+    text-decoration: underline;
     color: #288B54;
 }
 
-p > a:hover {
-    text-decoration: underline;
-}
-
 strong {
-    color:#288B54;
+    font-weight: bold;
+    color:#1A5C38;
 }
 
 .bugdroid {
@@ -96,16 +110,59 @@ strong {
 
 iframe {
     width: 100%;
+    height: 31.25em;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #38CA79;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div > h4 {
+    color: white;
+    background-color: #1F603C;
+    margin: -10px -10px 0 -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0px;
+}
+
+div > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+p.final {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #288B54;
+}
+
+footer > p > a {
+    color: #38CA79;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+    color: #83DFAB;
 }
 
 
 @media(max-width: 720px) {
     .imagem1 {
-        content: url('../imagens/dan-droids-pq.png');
+        content: url('../image/dan-droids-pq.png');
     }
 
     .imagem2 {
-        content: url("../imagens/irina-blok-pq.jpg")
+        content: url("../image/irina-blok-pq.jpg")
     }
 
     .bugdroid {

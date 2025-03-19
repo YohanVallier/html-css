@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.945);
+    margin: auto;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 4em;
+}
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header > p > a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+main {
+    background-color: white;
+    
+}
+
+section {
+    padding: 10vh 0 10vh 30px;
+    line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 2em;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.imagem > p {
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 40%;
+    color: white;
+}
+
+#joaninha {
+    background-image: url("../images/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#livros {
+    background-image: url("../images/background002.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+@media(max-width: 800px) {
+    section{
+        font-size: 1.5em;
+    }
+    .imagem > p {
+        background-color: rgba(0, 0, 0, 0.404);
+        width: 70%;
+        color: white;
+    }
+}
